@@ -1,0 +1,30 @@
+{
+  "name": "validationfunction",
+  "version": "1.0.0",
+  "description": "To validate the input fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renish28/fieldsvalidation.git"
+  },
+  "keywords": [
+    "input",
+    "fields",
+    "name",
+    "age",
+    "dob",
+    "email",
+    "phone",
+    "income",
+    "ssn"
+  ],
+  "author": "Renish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renish28/fieldsvalidation/issues"
+  },
+  "homepage": "https://github.com/renish28/fieldsvalidation#readme"
+}
