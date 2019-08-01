@@ -5,7 +5,7 @@
                       return 0;
             }
     }
-    const st = 'string';
+  
  const dobvalidation=(da)=>{
             let enteredMS = new Date(da).getTime();
             let currentMS = new Date().getTime();
