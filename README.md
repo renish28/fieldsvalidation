@@ -51,6 +51,11 @@ let isValidPhone = validationfunction.phone(Phone);
 ```javascript
 let SSN = "876543210";//"876-54-3210 or 876543210"
 let isValidSSN = validationfunction.ssn(SSN);
+//Invalid SSN format
+/*
+Any number beginning with "000", "666", "900-999"
+Any number has a middle "00", or ends in "0000" will never be a valid SSN.
+*/
 /* validationfunction.ssn(SSN) will check for a valid SSN and returns 1 if the SSN is valid else returns 0 */
 ```
 #### Income validation
