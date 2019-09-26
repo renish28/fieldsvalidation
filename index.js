@@ -103,7 +103,7 @@ const phonevalidation=(phone)=>{
            return 0;
        }
 }
-const ssnvalidation=(ssn)=>{
+/*const ssnvalidation=(ssn)=>{
         let patt=/^[0-9]{3}\-?[0-9]{2}\-?[0-9]{4}$/;
         let tes=patt.test(ssn);
         if(tes){
@@ -112,7 +112,46 @@ const ssnvalidation=(ssn)=>{
           return 0;
         }
 
-      }
+      }*/
+
+const ssnvalidation=(ssn)=>{
+       let ssncount=ssn.length;
+       let patt=/^[0-9]{3}\-?[0-9]{2}\-?[0-9]{4}$/;
+       //let patt=/^[0-9]{3}\-[0-9]{2}\-[0-9]{4}$/;
+       let tes=patt.test(ssn);
+  if(tes){
+     if(ssncount==11){
+        let con1=ssn.substring(0, 3);
+        let con2=ssn.substring(0, 1);
+        let con3=ssn.substring(4,6);
+        let con4=ssn.substring(7,11);
+           if((con1=='000')||(con1=='666')||(con2=='9')||(con3=='00')||(con4=='0000')){
+               //console.log('invalid format');
+               return 0;
+              }else{
+                  // console.log('valid format');
+                   return 1;
+              }
+        }else if(ssncount==9){
+                var cn1=ssn.substring(0, 3);
+                var cn2=ssn.substring(0, 1);
+                var cn3=ssn.substring(3,5);
+                var cn4=ssn.substring(5,9);
+                   if((cn1=='000')||(cn1=='666')||(cn2=='9')||(cn3=='00')||(cn4=='0000')){
+                      // console.log('invalid format');
+                        return 0;
+      
+                      }else{
+                         // console.log('valid format');
+                           return 1;
+                     }
+  }
+}else{
+  return 0;
+}
+
+}
+
      
 const incomevalidation=(inc,count)=>{
           let str = "" + inc;
