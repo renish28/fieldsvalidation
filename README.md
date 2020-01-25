@@ -14,8 +14,9 @@ Simply add `import validationfunction from 'validationfunction';`
 
 ```javascript
 let Name = "James";
-let isValidName = validationfunction.name(Name);
-/* validationfunction.name(Name) will check for special characters and numbers and returns 1 if the name is valid else returns 0 */
+let Minlength= 4;
+let isValidName = validationfunction.name(Name,Minlength);
+/* validationfunction.name(Name,Minlength) will check for special characters and numbers and also will check the length of the name should be greater than the minlength parameter and returns 1 if the name is valid else returns 0 */
 ```
 #### Date of Birth validation
 

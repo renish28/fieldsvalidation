@@ -1,8 +1,11 @@
- const namevalidation=(name)=>{
+ const namevalidation=(name,minlength)=>{
+   var namecount=name.length;
             if(/^[A-Za-z\s]+$/.test(name)){
-                        return 1;
+              if(namecount>minlength){
+                return 1;
                        }else{
                       return 0;
+              }
             }
     }
   
