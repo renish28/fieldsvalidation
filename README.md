@@ -40,6 +40,14 @@ let Email = "mail@testmail.com";
 let isValidEmail = validationfunction.email(Email);
 /* validationfunction.email(Email) will check for a valid Email and returns 1 if the Email ID is valid else returns 0 */
 ```
+#### Work Email validation
+
+```javascript
+let Email = "mail@testmail.com";
+let isValidEmail = validationfunction.workmail(Email);
+/*
+ validationfunction.workmail(Email) will check for a valid Email(other than free mails(gmail,yahoo,..etc)) and returns 1 if the Email ID is valid else returns 0 */
+```
 #### Phone validation
 
 ```javascript

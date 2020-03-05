@@ -106,17 +106,6 @@ const phonevalidation=(phone)=>{
            return 0;
        }
 }
-/*const ssnvalidation=(ssn)=>{
-        let patt=/^[0-9]{3}\-?[0-9]{2}\-?[0-9]{4}$/;
-        let tes=patt.test(ssn);
-        if(tes){
-          return 1;
-        }else{
-          return 0;
-        }
-
-      }*/
-
 const ssnvalidation=(ssn)=>{
        let ssncount=ssn.length;
        let patt=/^[0-9]{3}\-?[0-9]{2}\-?[0-9]{4}$/;
@@ -180,12 +169,21 @@ const incomevalidation=(inc,count)=>{
         
       }
 
+      const workmailvalidation=(mail)=>{
+        if(/^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!mail\.ru)(?!yandex\.ru)(?!mail\.com)([\w-]+.)+[\w-]{2,4})?$/.test(mail)){    
+          return 1;
+        } else {
+          return 0;
+        } 
+      }
+
    const validationfunction={
           
          name:namevalidation,
          dob:dobvalidation,
           age:agevalidation,
           email:mailvalidation,
+         workmail:workmailvalidation,
           phone:phonevalidation,
          ssn:ssnvalidation,
          income:incomevalidation
