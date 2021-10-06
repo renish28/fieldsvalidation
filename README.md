@@ -37,8 +37,9 @@ let isValidAge = validationfunction.age(DOB,Age);
 
 ```javascript
 let Email = "mail@testmail.com";
-let isValidEmail = validationfunction.email(Email);
-/* validationfunction.email(Email) will check for a valid Email and returns 1 if the Email ID is valid else returns 0 */
+let EmailEndswith ='@gmail.com';
+let isValidEmail = validationfunction.email(Email,EmailEndswith);
+/* validationfunction.email(Email,EmailEndswith) its contain 2 params here first param is mandatory it will check for the email valid format and will returns 1 if the Email ID is valid else returns 0, if the user provides second params EmailEndswith then it will check whether the Email ending with the EmailEndswith params if the condition satisfied it will return 1 else returns 0. */
 ```
 #### Work Email validation
 
